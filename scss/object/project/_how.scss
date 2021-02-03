@@ -1,0 +1,34 @@
+.p-how {
+    font-size: 1.2rem;
+    ul {
+        li {
+            padding: 3% 4%;
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    }
+    table {
+        margin: 3% 2%;
+        tr {
+            border: rgb(177, 156, 136) solid 1px;
+            th {
+                padding: 3% 0;
+                text-align: center;
+                width: 30%;
+            }
+            td {
+                width: auto;
+                padding: 3% 0;
+                line-height: 1.8rem;
+            }
+        }
+    }
+    p {
+        margin: 5% 0;
+        text-align: center;
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

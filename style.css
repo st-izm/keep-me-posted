@@ -472,6 +472,7 @@ template {
 
 html {
   overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   color: #412424;
 }
@@ -485,7 +486,7 @@ html {
 body {
   overflow: hidden;
   background-color: antiquewhite;
-  background-image: url(../../image/texture_image_3.jpg);
+  background-image: url(image/texture_image_3.jpg);
 }
 
 img {
@@ -562,9 +563,12 @@ img {
 }
 
 .c-titles--content {
+  position: relative;
+  display: inline-block;
   margin: 10px 10px;
   font-size: 3.0rem;
   font-family: 'IBM Plex Sans', sans-serif;
+  border-bottom: #412424 solid 1px;
 }
 
 .c-titles--part {
@@ -597,26 +601,35 @@ img {
   font-size: 1.1rem;
 }
 
-.p-detail dl {
-  padding: 2% 5px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 5fr;
-      grid-template-columns: 3fr 5fr;
-  gap: 5px;
-  -ms-grid-rows: 3rem 3rem 3rem 3rem;
-      grid-template-rows: 3rem 3rem 3rem 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.p-detail table {
+  width: 95%;
+  margin: 2% auto;
+  border-collapse: collapse;
 }
 
-.p-detail dl dt {
+.p-detail table tr {
   font-size: 1.2rem;
+  border-bottom: solid 1px black;
 }
 
-.p-detail dl dd {
-  font-size: 1.2rem;
+.p-detail table tr:last-child {
+  border-bottom: none;
+}
+
+.p-detail table tr th {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  font-weight: bold;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.p-detail table tr td {
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  padding: 3% 0;
 }
 
 .p-firstView {
@@ -690,6 +703,46 @@ img {
   text-align: center;
 }
 
+.p-how {
+  font-size: 1.2rem;
+}
+
+.p-how ul li {
+  padding: 3% 4%;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.p-how table {
+  margin: 3% 2%;
+}
+
+.p-how table tr {
+  border: #b19c88 solid 1px;
+}
+
+.p-how table tr th {
+  padding: 3% 0;
+  text-align: center;
+  width: 30%;
+}
+
+.p-how table tr td {
+  width: auto;
+  padding: 3% 0;
+  line-height: 1.8rem;
+}
+
+.p-how p {
+  margin: 5% 0;
+  text-align: center;
+}
+
+.p-how p a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .p-navigation {
   min-height: 100px;
   margin-bottom: 5%;
@@ -716,20 +769,36 @@ img {
   }
 }
 
-.p-works {
+.p-works__cd {
+  text-align: center;
+}
+
+.p-works__cd img {
+  width: 50%;
+}
+
+.p-works p {
+  margin: 5%;
+  font-size: 1.1rem;
+}
+
+.p-works strong {
+  font-size: 2.2rem;
+}
+
+.p-works ol li {
+  margin: 3% 0;
+  font-size: 1.2rem;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.p-works ul {
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.p-works img {
-  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

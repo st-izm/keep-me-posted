@@ -1,16 +1,29 @@
 .p-detail {
-  dl {
-    padding: 2% 5px;
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  gap: 5px;
-  grid-template-rows: 3rem 3rem 3rem 3rem;
-  align-items: center;
-    dt {
+  table {
+    width: 95%;
+    margin: 2% auto;
+    border-collapse: collapse;
+    tr {
       font-size: 1.2rem;
-    }
-    dd {
-      font-size: 1.2rem;
+      
+      border-bottom: solid 1px black;
+      &:last-child {
+        border-bottom: none;
+      }
+      th {
+        position: relative;
+        text-align: left;
+        width: 30%;
+        font-weight: bold;
+        text-align: center;
+        padding: 3% 0;
+      }
+      td {
+        text-align: left;
+        width: 70%;
+        text-align: center;
+        padding: 3% 0;
+      }
     }
   }
 }

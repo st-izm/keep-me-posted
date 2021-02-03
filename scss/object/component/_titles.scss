@@ -1,8 +1,11 @@
 .c-titles {
     &--content {
+        position: relative;
+        display: inline-block;
         margin: 10px 10px;
         font-size: 3.0rem;
         font-family: 'IBM Plex Sans', sans-serif;
+        border-bottom: rgb(65, 36, 36) solid 1px;
     }
     &--part {
         margin-left: 4%;

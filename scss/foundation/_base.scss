@@ -4,6 +4,7 @@
 
 html {
     overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: rgb(65, 36, 36);
     @include sp {
@@ -14,7 +15,7 @@ html {
 body {
     overflow: hidden;
     background-color: antiquewhite;
-    background-image: url(../../image/texture_image_3.jpg);
+    background-image: url(image/texture_image_3.jpg);
 }
 
 img {
