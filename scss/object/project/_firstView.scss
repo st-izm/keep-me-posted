@@ -1,0 +1,40 @@
+.p-firstView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__topImage {
+        img {
+            min-width: 450px;
+        }
+    }
+    &__topText {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        h2 {
+            font-size: 3.8rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.7rem;
+        }
+    }
+    @include sp {
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: rgb(180, 176, 174) solid 0.5px;
+        &__topImage {
+            img {
+                width: 70vw;
+            }
+        }
+        &__topText {
+            width: 100%;
+            h2 {
+                font-size: 3vw;
+            }
+        }
+    }
+}

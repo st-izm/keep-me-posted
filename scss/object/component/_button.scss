@@ -1,0 +1,18 @@
+.c-button {
+    width: 100px;
+    max-height: 50px;
+    margin: 10px;
+    text-align: center;
+    border: black solid 1px;
+    border-radius: 7px;
+    &:hover {
+        background-color: rgba(0,0,0,0.3);
+    }
+    &:active {
+        background-color: rgba(0,0,0,0.3);
+    }
+    a {
+        display: block;
+        font-size: 1.2rem;
+    }
+}

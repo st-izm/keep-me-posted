@@ -1,0 +1,12 @@
+.p-navigation {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include sp {
+        max-width: 800px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
