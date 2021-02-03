@@ -1,0 +1,15 @@
+.l-contents {
+    width: 98%;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    @include sp {
+        grid-template-columns: 1fr 1fr;
+    }
+    &__box {
+        width: 98%;
+        max-width: 450px;
+        background-color: rgb(241, 204, 155);
+        box-shadow: rosybrown 2px 2px;
+    }
+}

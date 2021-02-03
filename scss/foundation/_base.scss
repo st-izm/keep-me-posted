@@ -6,11 +6,15 @@ html {
     overflow: auto;
     font-size: 10px;
     color: rgb(65, 36, 36);
+    @include sp {
+        font-size: 15px;
+    }
 }
 
 body {
     overflow: hidden;
     background-color: antiquewhite;
+    background-image: url(../../image/texture_image_3.jpg);
 }
 
 img {

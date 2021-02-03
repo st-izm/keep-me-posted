@@ -476,9 +476,16 @@ html {
   color: #412424;
 }
 
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+
 body {
   overflow: hidden;
   background-color: antiquewhite;
+  background-image: url(../../image/texture_image_3.jpg);
 }
 
 img {
@@ -489,13 +496,40 @@ img {
   padding: 0 2%;
 }
 
+.l-contents {
+  width: 98%;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .l-contents {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.l-contents__box {
+  width: 98%;
+  max-width: 450px;
+  background-color: #f1cc9b;
+  -webkit-box-shadow: rosybrown 2px 2px;
+          box-shadow: rosybrown 2px 2px;
+}
+
 .c-button {
+  height: 30px;
   width: 100px;
   max-height: 50px;
   margin: 10px;
   text-align: center;
   border: black solid 1px;
   border-radius: 7px;
+  background-color: #f1d7c0;
+  -webkit-box-shadow: silver 1px 1px;
+          box-shadow: silver 1px 1px;
 }
 
 .c-button:hover {
@@ -511,6 +545,12 @@ img {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 900px) {
+  .c-button {
+    height: 40px;
+  }
+}
+
 .c-scroll {
   padding: 20px;
   text-align: center;
@@ -521,14 +561,62 @@ img {
   color: #794e17;
 }
 
-.p-detail dl {
+.c-titles--content {
+  margin: 10px 10px;
+  font-size: 3.0rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.c-titles--part {
+  margin-left: 4%;
+  font-size: 1.6rem;
+}
+
+.p-acts {
+  min-height: 200px;
+  min-width: 280px;
+}
+
+.p-acts ul {
+  padding-top: 2%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80px 100px;
-      grid-template-columns: 80px 100px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 10px;
+}
+
+.p-acts ul li ol {
+  margin-top: 5%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.p-acts ul li ol li {
+  padding: 5%;
+  font-size: 1.1rem;
+}
+
+.p-detail dl {
+  padding: 2% 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 5fr;
+      grid-template-columns: 3fr 5fr;
+  gap: 5px;
   -ms-grid-rows: 3rem 3rem 3rem 3rem;
       grid-template-rows: 3rem 3rem 3rem 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-detail dl dt {
+  font-size: 1.2rem;
+}
+
+.p-detail dl dd {
+  font-size: 1.2rem;
 }
 
 .p-firstView {
@@ -571,6 +659,7 @@ img {
 
 .p-firstView__topText p {
   font-size: 1.7rem;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 @media screen and (min-width: 900px) {
@@ -602,7 +691,8 @@ img {
 }
 
 .p-navigation {
-  height: 100px;
+  min-height: 100px;
+  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

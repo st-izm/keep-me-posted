@@ -1,8 +1,16 @@
 .p-detail {
   dl {
+    padding: 2% 5px;
   display: grid;
-  grid-template-columns: 80px 100px;
-  gap: 10px;
+  grid-template-columns: 3fr 5fr;
+  gap: 5px;
   grid-template-rows: 3rem 3rem 3rem 3rem;
+  align-items: center;
+    dt {
+      font-size: 1.2rem;
+    }
+    dd {
+      font-size: 1.2rem;
+    }
   }
 }

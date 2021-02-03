@@ -1,10 +1,13 @@
 .c-button {
+    height: 30px;
     width: 100px;
     max-height: 50px;
     margin: 10px;
     text-align: center;
     border: black solid 1px;
     border-radius: 7px;
+    background-color: rgb(241,215,192);
+    box-shadow: silver 1px 1px;
     &:hover {
         background-color: rgba(0,0,0,0.3);
     }
@@ -14,5 +17,8 @@
     a {
         display: block;
         font-size: 1.2rem;
+    }
+    @include sp {
+        height: 40px;
     }
 }

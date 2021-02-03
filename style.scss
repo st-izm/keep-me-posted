@@ -3,15 +3,15 @@
 // ==========================================================================
 
 @import "scss/foundation/_reset";
-@import "scss/foundation/_base";
 @import "scss/foundation/_mixin";
+@import "scss/foundation/_base";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
 
 @import "scss/layout/_container";
-// @import "scss/layout/_header";
+@import "scss/layout/_contents";
 // @import "scss/layout/_main";
 // @import "scss/layout/_sideMenu";
 
@@ -25,12 +25,13 @@
 
 @import "scss/object/component/_button";
 @import "scss/object/component/_scroll";
-// @import "scss/object/component/_pager";
+@import "scss/object/component/_titles";
 
 // // -----------------------------------------------------------------
 // // Project
 // // -----------------------------------------------------------------
 
+@import "scss/object/project/_acts";
 @import "scss/object/project/_detail";
 @import "scss/object/project/_firstView";
 @import "scss/object/project/_footer";

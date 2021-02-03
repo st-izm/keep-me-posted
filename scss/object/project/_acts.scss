@@ -1,0 +1,20 @@
+.p-acts {
+    min-height: 200px;
+    min-width: 280px;
+    ul {
+        padding-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        li {
+            ol {
+                margin-top: 5%;
+                grid-template-columns: 1fr;
+                li {
+                    padding: 5%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
