@@ -2,27 +2,41 @@
     &__cd {
         text-align: center;
         img {
+            display: block;
+            margin: 3% auto;
             width: 50%;
+            border-radius: 3px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
         }
-    }
-    p {
-        margin: 5%;
-        font-size: 1.1rem;
-    }
-    strong {
-        font-size: 2.2rem;
-    }
-    ol {
-        li {
-            margin: 3% 0;
+        a {
+            display: inline-block;
+            margin: 5%;
+            font-size: 1.1rem;
+        }
+        strong {
+            font-size: 2.0rem;
+            font-weight: normal;
+        }
+        hr {
+            width: 90%;
+            margin: 3% auto;
+        }
+        ol {
+            li {
+                margin: 3% 0;
+                font-size: 1.4rem;
+                list-style-type: decimal;
+                list-style-position: inside;
+            }
+        }
+        p {
+            padding: 3%;
             font-size: 1.2rem;
-            list-style-type: decimal;
-            list-style-position: inside;
+            line-height: 2rem;
+            span {
+                margin: 0 5%;
+                font-size: 1.0rem;
+            }
         }
-    }
-    ul {
-        padding: 5%;
-        display: flex;
-        justify-content: space-around;
     }
 }

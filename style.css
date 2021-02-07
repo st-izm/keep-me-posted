@@ -485,8 +485,9 @@ html {
 
 body {
   overflow: hidden;
-  background-color: antiquewhite;
-  background-image: url(image/texture_image_3.jpg);
+  background-color: #f3e4d0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(248, 226, 220, 0.7)), to(rgba(243, 210, 167, 0.7))), url(image/texture_image_3.jpg);
+  background: linear-gradient(90deg, rgba(248, 226, 220, 0.7), rgba(243, 210, 167, 0.7)), url(image/texture_image_3.jpg);
 }
 
 img {
@@ -499,6 +500,7 @@ img {
 
 .l-contents {
   width: 98%;
+  margin: 7% auto;
   display: -ms-grid;
   display: grid;
   gap: 20px;
@@ -698,13 +700,23 @@ img {
 }
 
 .p-footer {
-  padding: 3% 0;
-  background-color: #628fca;
+  height: 10vh;
+  background-color: #77a9eb;
   text-align: center;
+}
+
+.p-footer small {
+  line-height: 15vh;
 }
 
 .p-how {
   font-size: 1.2rem;
+}
+
+.p-how img {
+  display: block;
+  margin: 4% auto;
+  width: 36%;
 }
 
 .p-how ul li {
@@ -743,6 +755,38 @@ img {
   cursor: pointer;
 }
 
+.p-links table {
+  margin: 3% 2%;
+}
+
+.p-links table tr th {
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.p-links table tr th::after {
+  content: " - ";
+}
+
+.p-links table tr td {
+  padding: 0.6rem;
+  margin: 0 3%;
+  font-size: 1.6rem;
+}
+
+.p-links table tr td .fa-marker::after {
+  content: " blog";
+  font-weight: normal;
+  letter-spacing: -0.1rem;
+}
+
+.p-links table tr td .fa-video::after {
+  content: " SHOWROOM";
+  font-weight: normal;
+  letter-spacing: -0.1rem;
+}
+
 .p-navigation {
   min-height: 100px;
   margin-bottom: 5%;
@@ -774,31 +818,45 @@ img {
 }
 
 .p-works__cd img {
+  display: block;
+  margin: 3% auto;
   width: 50%;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.p-works p {
+.p-works__cd a {
+  display: inline-block;
   margin: 5%;
   font-size: 1.1rem;
 }
 
-.p-works strong {
-  font-size: 2.2rem;
+.p-works__cd strong {
+  font-size: 2.0rem;
+  font-weight: normal;
 }
 
-.p-works ol li {
+.p-works__cd hr {
+  width: 90%;
+  margin: 3% auto;
+}
+
+.p-works__cd ol li {
   margin: 3% 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   list-style-type: decimal;
   list-style-position: inside;
 }
 
-.p-works ul {
-  padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.p-works__cd p {
+  padding: 3%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.p-works__cd p span {
+  margin: 0 5%;
+  font-size: 1.0rem;
 }
 /*# sourceMappingURL=style.css.map */

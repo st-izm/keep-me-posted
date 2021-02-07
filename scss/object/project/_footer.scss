@@ -1,5 +1,8 @@
 .p-footer {
-    padding: 3% 0;
-    background-color: rgb(98, 143, 202);
+    height: 10vh;
+    background-color: rgb(119, 169, 235);
     text-align: center;
+    small {
+        line-height: 15vh;
+    }
 }

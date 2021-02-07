@@ -14,8 +14,8 @@ html {
 
 body {
     overflow: hidden;
-    background-color: antiquewhite;
-    background-image: url(image/texture_image_3.jpg);
+    background-color: rgb(243, 228, 208);
+    background: linear-gradient(90deg, rgba(248, 226, 220, 0.7), rgba(243, 210, 167, 0.7)), url(image/texture_image_3.jpg);
 }
 
 img {
