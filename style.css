@@ -855,6 +855,11 @@ img {
   line-height: 2rem;
 }
 
+.p-works__cd p i {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
 .p-works__cd p span {
   margin: 0 5%;
   font-size: 1.0rem;
